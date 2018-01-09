@@ -1,0 +1,10 @@
+package com.myapp.cloud.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.myapp.cloud.model.Order;
+
+@Repository
+public interface Orderrepository extends MongoRepository<Order, String>{
+
+}

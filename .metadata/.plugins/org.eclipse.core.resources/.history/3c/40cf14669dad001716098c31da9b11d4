@@ -1,0 +1,8 @@
+package com.myapp.cloud.api.client;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+
+@FeignClient("ORDER-MS")
+public interface OrderClient {
+
+}

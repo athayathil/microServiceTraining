@@ -1,0 +1,8 @@
+package com.myapp.cloud.messaging;
+
+public interface PaymentSource {
+	String CHANNEL_NAME="paymentsChannel";
+	MessagingChannel 
+	paymentsChannel();
+
+}

@@ -1,0 +1,26 @@
+package com.myapp.cloud.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.myapp.cloud.api.client.OrderClient;
+import com.myapp.cloud.model.Order;
+
+public class OrderServiceImpl implements OrderService {
+	@Autowired
+	private OrderClient orderClient;
+
+	@Override
+	public List<Order> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String placeNewOrder(Order order) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.myapp.cloud.messaging;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.stream.annotation.StreamListener;
+import org.springframework.stereotype.Service;
+
+import com.myapp.cloud.model.Payment;
+import com.myapp.cloud.repository.PaymentRepository;
+
+@Service
+public class PaymentHandler {
+	@Autowired
+	private PaymentRepository paymentRepository;
+	
+	@StreamListener(PaymentSink.CHANNEL_NAME)
+	public void subscribe(Payment payment) {
+		
+	}
+
+}

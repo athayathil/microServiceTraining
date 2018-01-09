@@ -1,0 +1,12 @@
+package com.myapp.cloud.model;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Order {
+	@i
+	private String id;
+	private String name;
+	private String price;
+
+}

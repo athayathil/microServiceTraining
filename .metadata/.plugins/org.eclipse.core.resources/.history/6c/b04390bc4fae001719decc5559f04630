@@ -1,0 +1,7 @@
+package com.myapp.cloud.messaging;
+
+@Service
+public class PaymentHandler {
+	
+
+}

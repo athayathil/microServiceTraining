@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    config:
+      uri: http://loacalhost:8888
+  application:
+    name: orderpayment-ms
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+---
+
+spring:
+  zipkin:
+    base-url: http://localhost:8085
+  sleuth:
+    sampler:
+      percentage: 1.0   

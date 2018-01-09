@@ -1,0 +1,8 @@
+package com.myapp.cloud.model;
+
+public class Order {
+	private String id;
+	private String name;
+	private String price;
+
+}

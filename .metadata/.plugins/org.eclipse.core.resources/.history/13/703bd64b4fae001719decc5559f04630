@@ -1,0 +1,5 @@
+package com.myapp.cloud;
+
+public interface PaymentSink {
+
+}

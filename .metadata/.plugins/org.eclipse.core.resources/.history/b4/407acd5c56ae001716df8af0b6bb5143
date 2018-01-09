@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      uri: http://loacalhost:8888
+  application:
+    name: order-ms
+   stream:
+      bindings:
+        paymentsChannel:
+          binder: rabbit
+          destination: newpayment.ibm.exchange
+          content-type: application/json
+          group: ibmblr
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}

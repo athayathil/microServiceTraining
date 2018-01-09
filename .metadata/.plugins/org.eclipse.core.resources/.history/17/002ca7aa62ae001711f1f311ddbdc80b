@@ -1,0 +1,13 @@
+package com.myapp.cloud.messaging;
+
+import org.springframework.integration.annotation.Gateway;
+import org.springframework.integration.annotation.MessagingGateway;
+
+
+@MessagingGateway
+
+public interface PaymentGateway {
+	@Gateway(requestChannel=PaymentSink.CHANNEL_NAME)
+	void publish (Payment payment);
+
+}

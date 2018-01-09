@@ -1,0 +1,17 @@
+package com.myapp.cloud.api;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.myapp.cloud.repository.PaymentRepository;
+
+@RestController
+public class PaymentWebAPI {
+	@Autowired
+	private PaymentRepository paymentRepository;
+	
+	public ResponseEntity <String> add (Payment payment){
+		paymentRepository.save(payment)
+	}
+
+}

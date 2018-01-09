@@ -1,0 +1,12 @@
+package com.myapp.cloud.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="payments")
+public class Payment {
+	@Id
+	@GenetratedValue()
+
+}

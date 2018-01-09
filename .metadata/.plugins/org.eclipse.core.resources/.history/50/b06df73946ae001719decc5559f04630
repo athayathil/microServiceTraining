@@ -1,0 +1,9 @@
+package com.myapp.cloud.repository;
+
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class PaymentRepository extends JpaRepository <Payment,Long> {
+
+}

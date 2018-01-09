@@ -1,0 +1,5 @@
+package com.myapp.cloud.model;
+
+public class payment {
+
+}

@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://loacalhost:8888
+  application:
+    name: order-ms
+   
+server:
+  port: ${PORT:${SERVER_PORT:0}}

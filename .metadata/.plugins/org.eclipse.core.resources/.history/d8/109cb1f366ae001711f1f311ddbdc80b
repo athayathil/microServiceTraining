@@ -1,0 +1,9 @@
+package com.myapp.cloud.messaging;
+
+import org.springframework.messaging.MessageChannel;
+
+public interface PaymentSource {
+	String CHANNEL_NAME="paymentsChannel";
+	MessageChannel 	paymentsChannel();
+
+}

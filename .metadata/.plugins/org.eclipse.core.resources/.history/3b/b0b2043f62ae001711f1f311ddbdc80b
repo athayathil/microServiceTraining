@@ -1,0 +1,9 @@
+package com.myapp.cloud.messaging;
+
+import org.springframework.integration.annotation.MessagingGateway;
+
+@MessagingGateway
+
+public interface PaymentGateway {
+
+}

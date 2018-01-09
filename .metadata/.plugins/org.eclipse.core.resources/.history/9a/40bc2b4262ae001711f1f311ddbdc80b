@@ -1,0 +1,12 @@
+package com.myapp.cloud.messaging;
+
+import org.springframework.integration.annotation.MessagingGateway;
+
+import com.myapp.cloud.model.Payment;
+
+@MessagingGateway
+
+public interface PaymentGateway {
+	void publish (Payment payment)
+
+}
